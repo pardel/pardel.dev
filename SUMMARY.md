@@ -5,4 +5,5 @@
 ## JavaScript
 
 * [Learning JS through TDD](javascript/javascript-through-tdd.md)
+* [Typescript](javascript/typescript.md)
 
