@@ -4,5 +4,5 @@
 
 ## JavaScript
 
-* [JavaScript through TDD](javascript/javascript-through-tdd.md)
+* [JS through TDD](javascript/javascript-through-tdd.md)
 
