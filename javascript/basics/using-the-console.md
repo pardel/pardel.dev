@@ -2,9 +2,7 @@
 description: How to make the most of the console
 ---
 
-# Using the Console
-
-## Using the Console
+# using the console
 
 ### Output to console
 

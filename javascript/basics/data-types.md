@@ -2,7 +2,7 @@
 description: A short overview of JavaScript data types.
 ---
 
-# Data Types
+# data yypes
 
 JavaScript is [weakly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing): variables can hold different data types at different times.
 
