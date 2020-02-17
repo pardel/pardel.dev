@@ -14,6 +14,9 @@
   * [document object](javascript/dom/document-object.md)
   * [selectors](javascript/dom/selectors.md)
   * [elements & nodes](javascript/dom/elements-and-nodes.md)
+  * [event listeners](javascript/dom/event-listeners.md)
+* [Local & Session Storage](javascript/local-and-session-storage.md)
+* [Create a Mock API server](javascript/create-a-mock-api-server.md)
 * [Learning JS through TDD](javascript/javascript-through-tdd.md)
 * [Typescript](javascript/typescript.md)
 
