@@ -9,6 +9,11 @@
   * [Using the Console](javascript/basics/using-the-console.md)
   * [Data Types](javascript/basics/data-types.md)
   * [var, let, & const](javascript/basics/var-let-and-const.md)
+* [DOM](javascript/dom/README.md)
+  * [window object](javascript/dom/window-object.md)
+  * [document object](javascript/dom/document-object.md)
+  * [selectors](javascript/dom/selectors.md)
+  * [elements & nodes](javascript/dom/elements-and-nodes.md)
 * [Learning JS through TDD](javascript/javascript-through-tdd.md)
 * [Typescript](javascript/typescript.md)
 
