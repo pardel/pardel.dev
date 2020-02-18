@@ -6,7 +6,7 @@ description: 'Where to place the JavaScript code:'
 
 ## HTML header
 
-```text
+```markup
 <html>
   <head>
     <title>Webpage</title>
@@ -18,7 +18,7 @@ description: 'Where to place the JavaScript code:'
 </html>
 ```
 
-```text
+```markup
 <html>
   <head>
     <title>Webpage</title>
@@ -41,7 +41,7 @@ app.js
 
 index.html
 
-```text
+```markup
 <html>
   <head>
     <title>Webpage</title>
@@ -55,7 +55,7 @@ index.html
 
 my-script.js
 
-```text
+```javascript
 export function House() { 
   this.width = 100;
   this.length = 200;
@@ -64,7 +64,7 @@ export function House() {
 
 second-script.js
 
-```text
+```javascript
 function paint() { 
   ...
 }
@@ -76,7 +76,7 @@ export { paint, clean }
 
 index.html
 
-```text
+```markup
 <html>
   <head>
     <title>Webpage</title>
@@ -98,7 +98,7 @@ Early days Google Chrome only
 
 **my-script.js**
 
-```text
+```javascript
 export const helloEvent = () => {
   console.log('Hello World');
 };
@@ -106,7 +106,7 @@ export const helloEvent = () => {
 
 **index.html**
 
-```text
+```markup
 <html>
   <head>
     <title>Webpage</title>
