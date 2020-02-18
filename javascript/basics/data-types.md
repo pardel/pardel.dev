@@ -2,7 +2,7 @@
 description: A short overview of JavaScript data types.
 ---
 
-# data yypes
+# data types
 
 JavaScript is [weakly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing): variables can hold different data types at different times.
 
@@ -33,6 +33,10 @@ Stored on head memory \(needs to be allocated\) - the pointers to the heap locat
 | **object** |  |  | "object" |
 | **class object** eg. Date |  |  | "object" |
 | **function** | Function\(\) |  | "function" |
+
+Classes are a type of function \([https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript](https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript)\).
+
+Setting the value for a key in a dictionary doesn't delete that key.
 
 ## Type conversions
 
