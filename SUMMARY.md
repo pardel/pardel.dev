@@ -18,6 +18,7 @@
 * [Local & Session Storage](javascript/local-and-session-storage.md)
 * [Tools](javascript/tools/README.md)
   * [Create a Mock API server](javascript/tools/create-a-mock-api-server.md)
+  * [Express](javascript/tools/express.md)
 * [Vue.js](javascript/vue.js/README.md)
   * [Add to an existing Page](javascript/vue.js/add-to-an-existing-page.md)
 * [TDD](javascript/javascript-through-tdd.md)
