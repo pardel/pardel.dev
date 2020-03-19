@@ -1,6 +1,10 @@
 # Table of contents
 
-* [My Learning notes](README.md)
+* [My Online Scratchpad](README.md)
+
+## Children Resources
+
+* [FREE online education resources](children-resources/free-online-education-resources.md)
 
 ## JavaScript
 

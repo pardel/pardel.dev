@@ -1,6 +1,6 @@
 ---
-description: Just my learning notes saved for further reference.
+description: 'Just my learning notes and other useful info, saved for future reference.'
 ---
 
-# My Learning notes
+# My Online Scratchpad
 
