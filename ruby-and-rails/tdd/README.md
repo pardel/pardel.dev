@@ -22,14 +22,22 @@ RSpec.describe "settings/index.html.erb", type: :view do
   it "- renders content" do
     assert_select 'h1', 'Settings'
     
+    # LINKS
     assert_select 'a', {count: 1, text:'Log in', href: login_path}
-    # check that not present
+      # check that not present
     assert_select "a[text=?]", "Resend welcome email", false
     
-    assert_select "form[action=?][method=?]", settings_update_path, "post" 
-    assert_select "form input[name=?][id=?][value=?]", "user[firstname]", 
+    # FORMS
+    assert_select 'form[action=?][method=?]', settings_update_path, 'post' 
+    assert_select 'form input[name=?][id=?][value=?]', 'user[firstname]', 
       'user_firstname', @user.firstname
-    assert_select "form button[type=?][id=?]", "submit", "update"
+    assert_select 'form input[name=?][id=?][value=?]', 'user[lastname]', 
+      'user_lastname', @user.lastname
+    assert_select 'form input[name=?][id=?][value=?][disabled=?]', 
+      'user[email]', 'user_email', @user.email, 'true'
+    assert_select 'form button[type=?][id=?]', 'submit', 'update'
+    
+      
   end
   
 end
