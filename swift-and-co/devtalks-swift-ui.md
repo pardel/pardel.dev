@@ -197,6 +197,66 @@ ScrollView {
 
 Add `padding()`
 
+## Multiple previews
+
+Wrap in Group:
+
+```swift
+Group {
+    NavigationView {
+        ContentView()
+    }
+}
+```
+
+Device used is the one specified at the top. Specify your own device:
+
+```swift
+Group {
+    NavigationView {
+        ContentView()
+    }
+    .previewDevice(PreviewDevice(rawValue: "iPhone Xʀ"))
+    .previewDisplayName("iPhone")
+}
+```
+
+Add another device preview - iPad
+
+```swift
+NavigationView {
+    ContentView()
+}
+.previewDevice(PreviewDevice(rawValue: "iPad Air (3rd generation)"
+))
+.previewDisplayName("iPad")
+```
+
+Point out the error in iPad - Run iPad - show conversation
+
+Correct Navigation for iPad:
+
+```swift
+NavigationView {
+    Text("Navigation")
+    ContentView()
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Take data outside the view
 
 Having data inside the View is not a good sign - usually it comes from an api or similar.
