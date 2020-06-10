@@ -29,6 +29,7 @@
 ## Swift & co
 
 * [Swift](swift-and-co/swift.md)
+* [DevTalks Swift UI](swift-and-co/devtalks-swift-ui.md)
 * [SwiftUI](swift-and-co/swiftui/README.md)
   * [State](swift-and-co/swiftui/state.md)
   * [Previews](swift-and-co/swiftui/previews.md)
