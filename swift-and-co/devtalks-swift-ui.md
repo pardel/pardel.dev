@@ -88,6 +88,8 @@ List(...) {
 ## Message sender or status
 
 1. show Message.swift in WIP - move next to ContentView
+   1. Explain Identifiable
+   2. explain properties - direction
 2. replace messages with:
 
 ```swift
@@ -174,6 +176,26 @@ if message.direction == .incoming {
 ```
 
 
+
+## Remove separators
+
+Replace list with `ForEach` and add `ScrollView`:
+
+```swift
+ScrollView {
+    ForEach(messages) { message in
+        if message.direction == .incoming {
+            IncomingMessageView(message: message)
+        } else {
+            OutgoingMessageView(message: message)
+        }
+    }
+}
+.padding()
+.navigationBarTitle("DevTalks", displayMode: .inline)
+```
+
+Add `padding()`
 
 ## Take data outside the view
 
