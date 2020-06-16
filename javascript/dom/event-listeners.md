@@ -62,6 +62,16 @@ function onClick(){
 
 Event types can be [found here](https://developer.mozilla.org/en-US/docs/Web/Events).
 
+For an array of elements:
+
+```javascript
+Array.from(document.getElementsByClassName("time_delta")).forEach(function(element) {
+    element.addEventListener('click', function(event){
+      console.log(event);
+    });
+  });
+```
+
 ## Event Properties
 
 ```javascript
