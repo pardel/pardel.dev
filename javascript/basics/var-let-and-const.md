@@ -1,12 +1,14 @@
 ---
-description: Exploring the different ways of defining variables.
+description: Exploring the different ways of defining data containers.
 ---
 
 # var, let, & const
 
 ## var
 
-"Legacy" keyword to add a "global variable". They are declared in the global scope regardless where the actual declaration occurs - this is called variable hoisting in the JavaScript world. These variable are also made available as property to the window object \(the default context\).
+ \(sole way before ES2015/ES6\)
+
+_Legacy_ keyword to add a _**global** variable_. They are declared in the global scope regardless where the actual declaration occurs - this is called variable hoisting in the JavaScript world. These variable are also made available as property to the window object \(the default context\).
 
 ```javascript
 ‣ var answer = 42;
@@ -46,7 +48,7 @@ Moreover, these variables are made available \(although undefined\) before their
 
 ## let
 
-The new way to define a variable.
+Introduced in ES2015/ES6. Similar way to define a variable but with scope constraints.
 
 ```javascript
 ‣ let answer = 42;
@@ -74,11 +76,19 @@ The new way to define a variable.
   undefined
 ```
 
+Variables cannot be re-declared using `let`, unlike `vars`   \(SyntaxError thrown\):
+
+```javascript
+‣ var x = 1;
+‣ var x = 2;
+‣ let answer = 42;
+‣ let answer = 42;
+  SyntaxError: redeclaration of let answer
+```
+
 ## const
 
-Create a constant - once defined, it cannot be re-assigned a value.
-
-**Cannot be re-assigned a value.**
+Introduced in ES2015/ES6. Creates a constant - once defined, it **cannot be re-assigned a value.**
 
 ```javascript
 ‣ const answer = 42;
@@ -87,7 +97,7 @@ Create a constant - once defined, it cannot be re-assigned a value.
   Assignment to constant variable.
 ```
 
-**Cannot be declared without a value.**
+**Also, cannot be declared without a value.**
 
 ```javascript
 ‣ const answer;
@@ -130,80 +140,9 @@ Create a constant - once defined, it cannot be re-assigned a value.
   Assignment to constant variable.
 ```
 
-## Scope
+## Best practice
 
-```javascript
-‣ var foo = "a";
-‣ let bar = "b";
-‣ const baz = "c";
-‣ console.log(`Global Scope: ${foo}, ${bar}, ${baz}`);
-    Global Scope: a, b, c
-
-‣ function hello(){
-    var foo = "d";
-    let bar = "e";
-    const baz = "f";
-    console.log(`Function Scope: ${foo}, ${bar}, ${baz}`);
-  }
-‣ hello();
-    Function Scope: d, e, f
-
-‣ console.log(`Global Scope: ${foo}, ${bar}, ${baz}`);
-    Global Scope: a, b, c
-```
-
-```javascript
-‣ var foo = "a";
-‣ let bar = "b";
-‣ const baz = "c";
-‣ console.log(`Global Scope: ${foo}, ${bar}, ${baz}`);
-    Global Scope: a, b, c
-
-‣ if (true) {
-    var foo = "d";
-    let bar = "e";
-    const baz = "f";
-    console.log(`If Scope: ${foo}, ${bar}, ${baz}`);
-  }
-    If Scope: d, e, f
-
-‣ console.log(`Global Scope: ${foo}, ${bar}, ${baz}`);
-    Global Scope: d, b, c
-```
-
-## Scope conflict 
-
-Danger!!!
-
-```javascript
-‣ let answer = 42;
-‣ function hello() {
-    console.log(answer);
-  }
-
-42
-```
-
-```javascript
-‣ let answer = 42;
-‣ function hello() {
-    let answer = 43;
-    console.log(answer);
-  }
-
-43
-```
-
-```javascript
-‣ let answer = 42;
-‣ function hello() {
-    console.log(answer);
-    let answer = 43;
-  }
-
-Uncaught ReferenceError: 
-  answer is not defined at 
-  hello (<anonymous>:2:17)
-  at <anonymous>:1:1
-```
+* never use `var`
+* start with `const` if unsure if a data container will change value
+* move to `let` when required
 

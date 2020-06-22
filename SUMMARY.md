@@ -4,16 +4,17 @@
 
 ## Children Resources
 
-* [FREE online education resources](children-resources/free-online-education-resources.md)
-
 ## JavaScript
 
 * [Basics](javascript/basics/README.md)
-  * [script tag](javascript/basics/script-tag.md)
   * [using the console](javascript/basics/using-the-console.md)
-  * [data types](javascript/basics/data-types.md)
   * [var, let, & const](javascript/basics/var-let-and-const.md)
+  * [Scope](javascript/basics/scope.md)
+  * [Data Types](javascript/basics/data-types.md)
+  * [Functions](javascript/basics/functions.md)
+  * [Closures](javascript/basics/closures.md)
 * [DOM](javascript/dom/README.md)
+  * [script tag](javascript/dom/script-tag.md)
   * [window object](javascript/dom/window-object.md)
   * [document object](javascript/dom/document-object.md)
   * [selectors](javascript/dom/selectors.md)

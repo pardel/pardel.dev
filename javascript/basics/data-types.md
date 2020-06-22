@@ -2,9 +2,9 @@
 description: A short overview of JavaScript data types.
 ---
 
-# data types
+# Data Types
 
-JavaScript is [weakly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing): variables can hold different data types at different times.
+JavaScript is [weakly typed](https://en.wikipedia.org/wiki/Strong_and_weak_typing): variables can hold different data types at different times and type 'checking' is done at runtime.
 
 **NB:** [Typescript](https://www.typescriptlang.org/) is a **typed superset** of JavaScript that compiles to plain JavaScript - it can be used to enforce type safety.
 
@@ -37,6 +37,53 @@ Stored on head memory \(needs to be allocated\) - the pointers to the heap locat
 Classes are a type of function \([https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript](https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript)\).
 
 Setting the value for a key in a dictionary doesn't delete that key.
+
+### Objects
+
+Simple container for **name:value** pairs:
+
+```javascript
+‣ const person = {
+    name:"Paul", 
+    location:"London",
+    hello() {
+      console.log(`Hello ${this.name}`);
+    }
+  }
+  
+‣ console.log(person);
+  Object { name: "Paul", location: "London", hello: hello() }
+  
+‣ person.name
+  "Paul"
+  
+‣ person.hello
+  function hello()
+
+‣ person.hello()
+  Hello Paul
+```
+
+### Nested objects
+
+```javascript
+‣ const person = {
+    name:"Paul", 
+    hello() {
+      console.log(`Hello from ${this.address.city}!`);
+    },
+    address: {
+      city: "London",
+      country: "UK"
+    },
+  }
+  
+‣ console.log(person)
+  Object { name: "Paul", hello: hello(), address: {…} }
+  
+‣ person.hello()
+  Hello from London!
+```
 
 ## Type conversions
 
