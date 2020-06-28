@@ -27,7 +27,12 @@
   * [Create a Mock API server](javascript/tools/create-a-mock-api-server.md)
   * [Express](javascript/tools/express.md)
 * [TDD](javascript/javascript-through-tdd.md)
-* [Typescript](javascript/typescript.md)
+
+## TypeScript
+
+* [Basics](typescript/basics.md)
+* [Types](typescript/types.md)
+* [Classes](typescript/classes.md)
 
 ## Swift & co
 
