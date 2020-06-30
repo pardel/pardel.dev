@@ -22,6 +22,7 @@
   * [selectors](javascript/dom/selectors.md)
   * [elements & nodes](javascript/dom/elements-and-nodes.md)
   * [event listeners](javascript/dom/event-listeners.md)
+  * [Cheatsheet](javascript/dom/cheatsheet.md)
 * [Local & Session Storage](javascript/local-and-session-storage.md)
 * [Tools](javascript/tools/README.md)
   * [Create a Mock API server](javascript/tools/create-a-mock-api-server.md)
@@ -33,6 +34,12 @@
 * [Basics](typescript/basics.md)
 * [Types](typescript/types.md)
 * [Classes](typescript/classes.md)
+
+## Vue.js
+
+* [General](vue.js/general.md)
+* [Basic example](vue.js/basic-example.md)
+* [Lifecycle hooks](vue.js/lifecycle-hooks.md)
 
 ## Swift & co
 
